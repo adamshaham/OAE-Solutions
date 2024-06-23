@@ -1,0 +1,87 @@
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-title {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+  display: none;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+/* Additional Styles for Wider FAQ Section */
+.self-stretch {
+  width: 100%;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.border-b-[-px] {
+  border-bottom-width: 1.1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
